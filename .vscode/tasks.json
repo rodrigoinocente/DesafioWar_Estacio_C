@@ -1,0 +1,17 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compilar e Executar C",
+      "type": "shell",
+      "command": "gcc",
+      "args": ["war.c", "-o", "war", "&&", "./war"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"],
+      "detail": "Compila e executa o programa em C"
+    }
+  ]
+}
